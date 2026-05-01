@@ -1,4 +1,4 @@
-# MindMori AI 森智守護 🛡️
+# MindMori AI 森智守護
 ### 阿茲海默症初步健康風險篩檢平台
 
 ---
@@ -73,43 +73,11 @@ npm run dev
 
 看到 `Local: http://localhost:3000/` 後，打開瀏覽器訪問該網址。
 
-> ⚠️ 兩個終端機都必須同時保持開著，網站才能正常運作。
+> 兩個終端機都必須同時保持開著，網站才能正常運作。
 
 ---
 
-## 部署到 Google Cloud Run（後端）
 
-```powershell
-gcloud auth login
-gcloud config set project YOUR_PROJECT_ID
-gcloud config set run/region asia-east1
-gcloud services enable run.googleapis.com cloudbuild.googleapis.com
 
-cd backend
-gcloud builds submit --tag gcr.io/YOUR_PROJECT_ID/mindmori-backend
-gcloud run deploy mindmori-backend \
-  --image gcr.io/YOUR_PROJECT_ID/mindmori-backend \
-  --platform managed \
-  --region asia-east1 \
-  --allow-unauthenticated \
-  --memory 1Gi \
-  --port 8080
-```
 
-## 部署前端到 Vercel
 
-1. 前往 vercel.com 用 GitHub 登入
-2. Import 你的 GitHub repository
-3. Root Directory 設為 `frontend`
-4. 新增環境變數 `VITE_API_URL` = 你的 Cloud Run 網址
-5. Deploy
-
----
-
-## 費用
-
-| 服務 | 費用 |
-|---|---|
-| Vercel 前端 | 免費 |
-| Google Cloud Run | 每月前 200 萬次請求免費 |
-| GitHub | 免費 |
