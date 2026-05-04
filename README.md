@@ -81,13 +81,3 @@ npm run dev
 看到 `Local: http://localhost:3000/` 後，打開瀏覽器訪問該網址。
 
 > 兩個終端機都必須同時保持開著，網站才能正常運作。
-<<<<<<< HEAD
-
----
-
-
-
-
-
-=======
->>>>>>> ac029aa86ff1a2ec1ef1ee9f9ebe5da2cc2994dc
