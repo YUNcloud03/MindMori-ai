@@ -2,7 +2,6 @@
 # MindMori AI 森智守護
 =======
 # MindMori AI 森智守護 
->>>>>>> ac029aa86ff1a2ec1ef1ee9f9ebe5da2cc2994dc
 ### 阿茲海默症初步健康風險篩檢平台
 
 ---
